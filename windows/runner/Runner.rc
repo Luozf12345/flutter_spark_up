@@ -89,11 +89,11 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.zfly" "\0"
+            VALUE "CompanyName", "com.example" "\0"
             VALUE "FileDescription", "flutter_spark_up" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "flutter_spark_up" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 com.zfly. All rights reserved." "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
             VALUE "OriginalFilename", "flutter_spark_up.exe" "\0"
             VALUE "ProductName", "flutter_spark_up" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"

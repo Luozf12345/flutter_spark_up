@@ -1,6 +1,6 @@
 # flutter_spark_up
 
-A new Flutter project, mark spark up!
+A new Flutter project.
 
 ## Getting Started
 
