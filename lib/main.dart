@@ -23,30 +23,36 @@ class _MyAppState extends State<MyApp> {
     super.initState();
   }
 
-  Future<void> initTheme() async {
+  Future<TDThemeData?> initTheme() async {
     var jsonString = await rootBundle.loadString('assets/theme.json');
-    print('jsonString:$jsonString');
     TDTheme.needMultiTheme(true);
     themeData = TDThemeData.fromJson('green', jsonString);
+    return themeData;
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: TDTextConfiguration(
-        child: Theme(
-            data: ThemeData(extensions: [themeData!]),
-            child: Builder(
-              builder: (context) {
-                return Scaffold(
-                  appBar: _buildAppBar(context),
-                  // appBar: _buildAppBar(context),
-                  // body: StudyDetail(),
-                  body: body(context),
-                  bottomNavigationBar: _buildBottomTabBar(),
-                );
-              },
-            )),
+        child: FutureBuilder(future: initTheme(), builder: (context, snapshot) {
+          if (!snapshot.hasData) {
+            return TDLoading(size: TDLoadingSize.large);
+          }
+
+          return Theme(
+              data: ThemeData(extensions: [themeData!]),
+              child: Builder(
+                builder: (context) {
+                  return Scaffold(
+                    appBar: _buildAppBar(context),
+                    // appBar: _buildAppBar(context),
+                    // body: StudyDetail(),
+                    body: body(context),
+                    bottomNavigationBar: _buildBottomTabBar(),
+                  );
+                },
+              ));
+        }),
       ),
     );
   }
