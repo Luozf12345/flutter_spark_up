@@ -169,7 +169,7 @@ packages:
     source: hosted
     version: "4.0.2"
   image_picker:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       name: image_picker
       sha256: "1f498d086203360cca099d20ffea2963f48c39ce91bdd8a3b6d4a045786b02c8"
@@ -177,7 +177,7 @@ packages:
     source: hosted
     version: "1.0.8"
   image_picker_android:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       name: image_picker_android
       sha256: "844c6da4e4f2829dffdab97816bca09d0e0977e8dcef7450864aba4e07967a58"
@@ -344,9 +344,9 @@ packages:
   tdesign_adaptation:
     dependency: "direct overridden"
     description:
-      path: tdesign_adaptation
+      path: tdesign-adaptation
       ref: "feature/3.16_adaptation"
-      resolved-ref: fc889fe911f32fbe5a189068f08a7b1459863e88
+      resolved-ref: "08f49ab236d74fd1aff45d378ea04f39577e6bf8"
       url: "https://github.com/Tencent/tdesign-flutter.git"
     source: git
     version: "0.0.1"
@@ -355,7 +355,7 @@ packages:
     description:
       path: tdesign-component
       ref: "feature/3.32_adaptation"
-      resolved-ref: c7db71473a327a87ac71991e0b099369c9c6d89d
+      resolved-ref: a364841f0de9d8e66fd4f90efe1e3ba69e434994
       url: "https://github.com/Tencent/tdesign-flutter.git"
     source: git
     version: "0.2.0"
