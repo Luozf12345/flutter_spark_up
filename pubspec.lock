@@ -169,7 +169,7 @@ packages:
     source: hosted
     version: "4.0.2"
   image_picker:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: image_picker
       sha256: "1f498d086203360cca099d20ffea2963f48c39ce91bdd8a3b6d4a045786b02c8"
@@ -341,24 +341,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
-  tdesign_adaptation:
-    dependency: "direct overridden"
-    description:
-      path: tdesign-adaptation
-      ref: "feature/3.16_adaptation"
-      resolved-ref: "08f49ab236d74fd1aff45d378ea04f39577e6bf8"
-      url: "https://github.com/Tencent/tdesign-flutter.git"
-    source: git
-    version: "0.0.1"
   tdesign_flutter:
     dependency: "direct main"
     description:
-      path: tdesign-component
-      ref: "feature/3.32_adaptation"
-      resolved-ref: a364841f0de9d8e66fd4f90efe1e3ba69e434994
-      url: "https://github.com/Tencent/tdesign-flutter.git"
-    source: git
-    version: "0.2.0"
+      name: tdesign_flutter
+      sha256: "03eba56fbc92563d0c31e6aab34474245768554916c27a64908bb0e466cdb24b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.2"
+  tdesign_flutter_adaptation:
+    dependency: "direct overridden"
+    description:
+      name: tdesign_flutter_adaptation
+      sha256: "8c5ba936abd2651472495b19dd23c525f04fb2eac6ba23de55a8b63a7c226deb"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.16.0"
   term_glyph:
     dependency: transitive
     description:
