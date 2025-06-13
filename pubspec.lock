@@ -365,24 +365,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.1"
-  tdesign_adaptation:
-    dependency: transitive
-    description:
-      path: tdesign_adaptation
-      ref: "feature/3.32_adaptation"
-      resolved-ref: c7db71473a327a87ac71991e0b099369c9c6d89d
-      url: "https://github.com/Tencent/tdesign-flutter.git"
-    source: git
-    version: "0.0.1"
   tdesign_flutter:
     dependency: "direct main"
     description:
-      path: tdesign-component
-      ref: "feature/3.32_adaptation"
-      resolved-ref: c7db71473a327a87ac71991e0b099369c9c6d89d
-      url: "https://github.com/Tencent/tdesign-flutter.git"
-    source: git
-    version: "0.2.0"
+      name: tdesign_flutter
+      sha256: "03eba56fbc92563d0c31e6aab34474245768554916c27a64908bb0e466cdb24b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.2"
+  tdesign_flutter_adaptation:
+    dependency: transitive
+    description:
+      name: tdesign_flutter_adaptation
+      sha256: "707bbc52ec8b5872ea808500200f402007acf24c03a1cc823a3be2113c1d813a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.32.0"
   term_glyph:
     dependency: transitive
     description:
